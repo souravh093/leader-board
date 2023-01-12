@@ -242,14 +242,86 @@ main {
     color: #AEAEAE;
 }
 
-.rating-content .rating-content {
-
-}
-
 .rating-content .rating-time,
 .rating-content .rating-time .rating-clock{
     background: #FFE4E8;
     border-radius: 14px;
     padding: 4px 6px;
     color: #ED6B4F;
+}
+
+
+/* Responsive Desing  */
+
+@media screen and (max-width: 576px) {
+    .navbar {
+        width: 100vw;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .contaner {
+        width: 90vw;
+    }
+
+    .players {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .blogs {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+
+    .blog {
+        display: flex;
+        justify-content: center;
+        gap: 16px;
+        flex-direction: column;
+    }
+
+    .course-container {
+        width: 90vw;
+    }
+
+    .courses {
+        flex-direction: column;
+    }
+
+    .course img {
+        width: 174px;
+        height: 87px;
+    }
+
+    .lates-course {
+        padding: 0px 20px 40px 20px;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    .contaner {
+        width: 90vw;
+    }
+
+    .players {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .blogs {
+        gap: 30px;
+    }
+
+    .blog {
+        flex-direction: column;
+    }
+
+    .course-container {
+        width: 90vw;
+    }
+
+    .courses {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
 }
